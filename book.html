@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>register</title>
+  <link rel="stylesheet" href="styles1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <h1>Book now your Trip</h1>
+    <form id="myform">
+      <label for="1">name</label><br>
+      <input id="1" class="btn" type="text" required><br>
+
+      <label for="2">place</label><br>
+      <input id="2" class="btn" type="text" required><br>
+
+      <label for="3">Trip days</label><br>
+      <input id="3" maxlength="2" class="btn" type="number" pattern="[0-9]{2}" minlength="1" required><br>
+
+      <label for="4">phone number</label><br>
+      <input type="tel" id="4" class="btn" maxlength="10" pattern="[0-9]{10}" required><br>
+      
+      <label for="6">E-mail</label><br>
+      <input type="email" class="btn" id="6"><br>
+
+      <label for="5">aadhaar number</label><br>
+      <input id="5" class="btn" type="number" name="aadhaar" maxlength="12" minlength="12" pattern="[0-9]{12}" required><br>
+
+      <input id="but" type="submit" value="register">
+    </form>
+
+    <script>
+      // Add form submit event
+      document.getElementById("myform").addEventListener("submit", function(event) {
+        event.preventDefault(); // stop default submit for a moment
+
+        if (this.checkValidity()) { 
+          // if all required fields are filled, go to page2.html
+          window.location.href = "info.html";
+        } else {
+          this.reportValidity(); // show browser validation messages
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>

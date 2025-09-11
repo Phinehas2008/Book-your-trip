@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    background: #e380ff;
+    font-family: 'Poppins', sans-serif;
+}
+.main {
+    border: 2px solid #443e3e;
+}
+.btn{
+    width: 300px;
+    height: 30px;
+    margin: 20px 5px;
+    border-radius: 20px;
+}
+#but{
+    margin: 20px 5px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background: transparent;
+}
