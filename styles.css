@@ -4,7 +4,7 @@
   border-radius: 10px;       /* For rounded corners */
   overflow: hidden;
   background-image: url('pamban.jpg');
-  background-size: cover;    /* Ensures image covers the whole container */
+  background-size: contain;    /* Ensures image covers the whole container */
   background-position: top;  /* Aligns image to the top */
   background-repeat: no-repeat; /* Prevents tiling */
 }
